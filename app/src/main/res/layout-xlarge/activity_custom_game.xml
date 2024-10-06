@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="ltr"
+    tools:context="baruhrissminesweeper.minesweeperpro.CustomGameActivity">
+
+    <ImageView
+        android:id="@+id/keycustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/home"
+        android:layout_marginStart="59dp"
+        android:layout_weight="1"
+        android:onClick="key"
+        app:srcCompat="@drawable/keyopen" />
+
+    <ImageView
+        android:id="@+id/lockandkey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/keycustom"
+        android:layout_alignTop="@+id/play"
+        android:layout_weight="1"
+        android:onClick="lockandkey"
+        app:srcCompat="@drawable/lockandcubecustom" />
+
+    <ImageView
+        android:id="@+id/lockcustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/minecustom"
+        android:layout_alignTop="@+id/lockandkey"
+        android:layout_weight="1"
+        android:onClick="lock"
+        app:srcCompat="@drawable/lookcube" />
+
+    <ImageView
+        android:id="@+id/minecustom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/keycustom"
+        android:layout_marginStart="37dp"
+        android:layout_toEndOf="@+id/keycustom"
+        android:layout_weight="1"
+        android:onClick="mine"
+        app:srcCompat="@drawable/bomb" />
+
+    <LinearLayout
+        android:id="@+id/customgameboard"
+        android:layout_width="match_parent"
+        android:layout_height="780dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"></LinearLayout>
+
+    <ImageButton
+        android:id="@+id/earse"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignStart="@+id/size"
+        android:layout_alignTop="@+id/undo"
+        android:onClick="earse"
+        app:srcCompat="@drawable/eraser" />
+
+    <ImageButton
+        android:id="@+id/undo"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignBottom="@+id/play"
+        android:layout_alignEnd="@+id/size"
+        android:onClick="undo"
+        app:srcCompat="@drawable/undo" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="90dp"
+        android:onClick="play"
+        app:srcCompat="@drawable/playbuttoncustom" />
+
+    <Button
+        android:id="@+id/size"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/minecustom"
+        android:layout_centerHorizontal="true"
+        android:onClick="size"
+        android:text="9X9"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/play"
+        android:layout_alignStart="@+id/play"
+        android:layout_marginBottom="15dp"
+        android:onClick="home"
+        app:srcCompat="@drawable/housetwo" />
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Minesweeper Pro</string>
+    <string-array name="size_numbers">
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+
+    </string-array>
+    <string-array name="difficulty">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Hard</item>
+        <item>Extreme</item>
+    </string-array>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layoutDirection="ltr"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/slide_image"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+
+        app:srcCompat="@drawable/frozenmineone" />
+
+    <TextView
+        android:id="@+id/slide_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:text="Frozen Mine"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/slide_reading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/charge_text"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="26sp" />
+
+    <ImageView
+        android:id="@+id/error_or_succses"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/slide_reading"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        app:srcCompat="@drawable/error" />
+
+    <TextView
+        android:id="@+id/charge_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_title"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="TextView"
+        android:textSize="26sp" />
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:layoutDirection="ltr"
+    tools:context="baruhrissminesweeper.minesweeperpro.MainActivity">
+
+    <ImageButton
+        android:id="@+id/change_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gameBoard"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp"
+        android:onClick="flag"
+        app:srcCompat="@drawable/bombtwo" />
+
+    <LinearLayout
+        android:id="@+id/gameBoard"
+        android:layout_width="match_parent"
+        android:layout_height="415dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="sound"
+            android:paddingTop="2dp"
+            app:srcCompat="@drawable/volumeonicon" />
+
+        <ImageView
+            android:id="@+id/home_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="back"
+            android:paddingTop="2dp"
+            app:srcCompat="@drawable/housetwo" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="createNewGame"
+            android:paddingTop="2dp"
+            app:srcCompat="@drawable/resicon" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/speical_ability_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/change_button"
+        android:layout_below="@+id/change_button"
+        android:onClick="special_ability"
+        app:srcCompat="@drawable/frozenmineicon" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/change_button"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="17dp"
+        android:layout_toEndOf="@+id/speical_ability_button"
+        android:text="Mines"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignBottom="@+id/speical_ability_button"
+        android:layout_alignEnd="@+id/textView6"
+        android:layout_marginBottom="41dp"
+        android:layout_marginEnd="9dp"
+        android:enabled="true"
+        android:textSize="16sp" />
+
+    <ProgressBar
+        android:id="@+id/special_ability_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/change_button"
+        android:layout_alignStart="@+id/speical_ability_button"
+        android:layout_below="@+id/speical_ability_button" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/fire_works"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/fireworkes" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/change_button"
+        android:text="Timer"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <TextView
+        android:id="@+id/timer_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button"
+        android:layout_alignBottom="@+id/button"
+        android:paddingLeft="80dp"
+        android:text="00:00"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:visibility="invisible"
+        android:layout_alignParentStart="true"
+        app:srcCompat="@drawable/numberspiner" />
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="95dp"
+        app:srcCompat="@drawable/arrow" />
+
+
+</RelativeLayout>
